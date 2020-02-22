@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple input validation</title>
+</head>
+<body>
+  <style>
+    input:focus {
+      outline: none;
+    }
+    .input-valid {
+        border: 2px solid green;
+      }
+      .input-invalid {
+        border: 2px solid red;
+      }
+  </style>
+  <div class="input-validation">
+    <input data-rule="email" type="email" class="input-email" placeholder="Your email">
+    <input data-rule="tel" type="tel" name="tel" id="tel" class="input-tel" placeholder="81234567890">
+    <input data-rule="date" type="text" name="date" id="date" class="input-date" placeholder="dd.mm.yyyy">
+    <input data-rule="domain" type="text" name="domen" id="domen" class="input-domen" placeholder="Your domain">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
